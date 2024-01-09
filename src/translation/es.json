@@ -1,0 +1,29 @@
+{
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "training": "Formación",
+    "main-section":{
+        "title": "Hola, soy",
+        "name": "Ronald",
+        "lastname": "Benítez",
+        "description": "Un entusiasta desarrollador web y móvil. Actualmente estoy inmerso en el aprendizaje de React y React Native, utilizando tecnologías como Next.js y Expo.",
+        "button": "Descargar CV"
+    },
+    "toast":{
+        "email": "Correo copiado al portapapeles"
+    },
+    "skills-section":{
+        "languages": "Lenguajes",
+        "frameworks": "Frameworks/Librerías",
+        "tools": "Herramientas"
+    },
+    "training-section":{
+        "academic": "Académica",
+        "academic-description": "Actualmente, he completado mi quinto año en la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador y estoy en proceso de egreso",
+        "self-taught": "Autodidacta",
+        "self-taught-description": "De manera autodidacta, he adquirido conocimientos en el desarrollo de aplicaciones web con React y React Native. Además, he explorado el uso de herramientas como Firebase, TailwindCSS, Supabase, entre otras. También he desarrollado habilidades en el manejo de herramientas de control de versiones como Git y GitHub.",
+        "english": "Inglés",
+        "english-description": "Conocimiento básico del idioma inglés. Actualmente me encuento en proceso de aprendizaje del idioma."
+    }
+}

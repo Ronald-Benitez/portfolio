@@ -1,0 +1,30 @@
+{
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "training": "Training",
+    "main-section": {
+        "title": "Hello, I'm",
+        "name": "Ronald",
+        "lastname": "Benítez",
+        "description": "An enthusiastic web and mobile developer. Currently, I'm immersed in learning React and React Native, using technologies like Next.js and Expo.",
+        "button": "Download CV"
+    },
+    "toast":{
+        "email": "Email copied to clipboard"
+    },
+    "skills-section":{
+        "languages": "Languages",
+        "frameworks": "Frameworks/Libraries",
+        "tools": "Tools"
+    },
+    "training-section": {
+        "academic": "Academic",
+        "academic-description": "Currently, I have completed my fifth year in the Computer Systems Engineering program at the University of El Salvador and I am in the graduation process.",
+        "self-taught": "Self-taught",
+        "self-taught-description": "Self-taught, I have acquired knowledge in web application development using React and React Native. Additionally, I have explored the use of tools such as Firebase, TailwindCSS, Supabase, among others. I have also developed skills in using version control tools like Git and GitHub.",
+        "english": "English",
+        "english-description": "Basic knowledge of the English language. I am currently in the process of learning the language."
+    }
+    
+}
