@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <section className="w-full mx-auto py-5" id='main-section'>
+      <section className="w-full mx-auto  py-5" id='main-section'>
         <MainSection />
       </section>
       <section className="w-full mx-auto py-5 bg-slate-100" id='skills-section'>

@@ -10,7 +10,12 @@ const socialMedia = [
 ]
 
 function MainSection() {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
+
+    const handleDownloadCV = () => {
+        const lang = i18n.language === "es" ? "es" : "en"
+        window.open(`/Ronald-Benitez-CV-(${lang}).pdf`, "_blank")
+    }
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -19,7 +24,7 @@ function MainSection() {
                 alt="avatar"
                 className="rounded-full size-32"
             />
-            <h1 className="text-4xl text-center mt-4 p-2 truncate">
+            <h1 className="text-4xl text-center mt-4 p-2 truncate ">
                 {t("main-section.title")} <span className="font-bold">{t("main-section.name")} {t("main-section.lastname")}</span>
             </h1>
             <p className="text-center mt-4 max-w-prose p-2">
@@ -45,9 +50,12 @@ function MainSection() {
             </div>
 
             <div className="flex justify-center mt-4">
-                <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm">
+                <a
+                    className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm"
+                    onClick={handleDownloadCV}
+                >
                     {t('main-section.button')}
-                </button>
+                </a>
             </div>
         </div>
     )
