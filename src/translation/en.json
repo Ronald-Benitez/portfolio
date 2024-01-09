@@ -25,6 +25,14 @@
         "self-taught-description": "Self-taught, I have acquired knowledge in web application development using React and React Native. Additionally, I have explored the use of tools such as Firebase, TailwindCSS, Supabase, among others. I have also developed skills in using version control tools like Git and GitHub.",
         "english": "English",
         "english-description": "Basic knowledge of the English language. I am currently in the process of learning the language."
+    },
+    "projects-section": {
+        "technologies": "Used Technologies",
+        "links": "Links"
+    },
+    "eco": {
+        "title": "Eco",
+        "description": "Eco is a mobile application developed with React Native and Expo. This application enables users to track their expenses and income, set savings goals, and maintain a daily record of their activities."
     }
     
 }

@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 import LanguageSelector from './language-selector';
 
 const navbarItems = [
-    { name: 'skills', href: '/' },
-    { name: "training", href: "/training" },
-    { name: 'projects', href: '/about' },
-    { name: 'contact', href: '/contact' }
+    { name: 'skills', href: '#skills-section' },
+    { name: "training", href: "#training-section" },
+    { name: 'projects', href: '#projects-section' },
+    { name: 'contact', href: '#contact-section' }
 ];
 
 const Navbar = () => {
@@ -57,7 +57,7 @@ const Navbar = () => {
                             <a
                                 key={i}
                                 href={item.href}
-                                className="py-2 px-2 hover:text-gray-600 block"
+                                className={"py-2 px-2 hover:text-gray-600 block"}
                             >
                                 {t(item.name)}
                             </a>

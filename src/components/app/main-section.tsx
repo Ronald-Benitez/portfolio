@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { IconBrandGithub, IconBrandLinkedin, IconMailForward, IconMail } from "@tabler/icons-react"
-import toast,{Toaster} from "react-hot-toast"
+
+import MailtToClipBoard from "./mail-to-clipboard"
 
 const socialMedia = [
     { name: "github", href: "https://github.com/Ronald-Benitez", icon: <IconBrandGithub size={25} /> },
@@ -10,11 +11,6 @@ const socialMedia = [
 
 function MainSection() {
     const { t } = useTranslation()
-    
-    const mailtToClipBoard = () => {
-        navigator.clipboard.writeText("ronald362001@gmail.com")
-        toast.success(t("toast.email"))
-    }
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -42,12 +38,10 @@ function MainSection() {
                         </a>
                     ))
                 }
-                <button
-                    className="hover:text-gray-600 p-2"
-                    onClick={mailtToClipBoard}
-                >
+                <MailtToClipBoard>
                     <IconMail size={25} />
-                </button>
+                </MailtToClipBoard>
+
             </div>
 
             <div className="flex justify-center mt-4">
@@ -55,7 +49,6 @@ function MainSection() {
                     {t('main-section.button')}
                 </button>
             </div>
-            <Toaster/>
         </div>
     )
 }
