@@ -20,11 +20,11 @@
     },
     "training-section":{
         "academic": "Académica",
-        "academic-description": "Actualmente, he completado mi quinto año en la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador y estoy en proceso de egreso",
+        "academic-description": "Actualmente, he completado mi quinto año en la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador y estoy en proceso de egreso.",
         "self-taught": "Autodidacta",
         "self-taught-description": "De manera autodidacta, he adquirido conocimientos en el desarrollo de aplicaciones web con React y React Native. Además, he explorado el uso de herramientas como Firebase, TailwindCSS, Supabase, entre otras. También he desarrollado habilidades en el manejo de herramientas de control de versiones como Git y GitHub.",
         "english": "Inglés",
-        "english-description": "Conocimiento básico del idioma inglés. Actualmente me encuento en proceso de aprendizaje del idioma."
+        "english-description": "Conocimiento básico del idioma inglés. Actualmente me encuentro en proceso de aprendizaje del idioma."
     },
     "projects-section":{
         "technologies": "Tecnologías utilizadas",

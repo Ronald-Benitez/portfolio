@@ -24,7 +24,7 @@ function MainSection() {
                 alt="avatar"
                 className="rounded-full size-32"
             />
-            <h1 className="text-4xl text-center mt-4 p-2 truncate ">
+            <h1 className="text-4xl text-center mt-4 p-2">
                 {t("main-section.title")} <span className="font-bold">{t("main-section.name")} {t("main-section.lastname")}</span>
             </h1>
             <p className="text-center mt-4 max-w-prose p-2">
