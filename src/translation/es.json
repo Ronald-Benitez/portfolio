@@ -45,7 +45,7 @@
         "description": "Esta es una aplicación web desarrollada con Next.js y TailwindCSS. Está destinado a ser utilizado por una empresa familiar para gestionar sus productos y ventas. La información se almacena en una base de datos PostgreSQL y la aplicación está alojada en Vercel."
     },
     "sh":{
-        "title": "Sistema hospitalario",
+        "title": "SH",
         "description": "Es un sistema web desarrollado con Supabase y Next.js, surge como proyecto final de la materia de 'Administración de proyectos informáticos', cuenta principalmente con control de farmacia, citas y consultas médicas."
     }
 }

@@ -43,6 +43,9 @@
     "family-business": {
         "title": "Family Business",
         "description": "This is a web application developed with Next.js and TailwindCSS. It is intended to be used by a family business to manage its products, and sales. The information is stored in a PostgreSQL database and the application is hosted on Vercel."
-    }
-    
+    },
+    "sh":{
+        "title": "SH",
+        "description": "It is a web system developed with Supabase and Next.js, it arises as a final project of the 'Computer Project Management' subject, it mainly has pharmacy control, appointments and medical consultations.."
+    }    
 }
