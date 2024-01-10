@@ -3,6 +3,7 @@
     "projects": "Proyectos",
     "contact": "Contacto",
     "training": "Formación",
+    "working": "¿Qué estoy haciendo?",
     "main-section":{
         "title": "Hola, soy",
         "name": "Ronald",
@@ -30,8 +31,21 @@
         "technologies": "Tecnologías utilizadas",
         "links": "Enlaces"
     },
+    "working-section": {
+        "title": "¿Qué estoy haciendo?",
+        "description": "En la actualidad, estoy llevando a cabo mejoras continuas en 'Eco'. Tengo previsto incorporar la versión en español, siguiendo un formato similar al de este portafolio. Además, estoy inmerso en el desarrollo de una página para la gestión de un negocio familiar, utilizando tecnologías como Next.js para la construcción del sitio y Vercel para su alojamiento, mientras que la información se respalda mediante PostgreSQL.",
+        "technologies": "Tecnologías utilizadas"
+    },
     "eco":{
         "title": "Eco",
         "description": "Eco es una aplicación móvil desarrollada con React Native y Expo. Esta aplicación permite a los usuarios realizar un seguimiento de sus gastos e ingresos, así como establecer metas de ahorro y mantener un registro diario de sus actividades."
+    },
+    "family-business":{
+        "title": "Negocio familiar",
+        "description": "Esta es una aplicación web desarrollada con Next.js y TailwindCSS. Está destinado a ser utilizado por una empresa familiar para gestionar sus productos y ventas. La información se almacena en una base de datos PostgreSQL y la aplicación está alojada en Vercel."
+    },
+    "sh":{
+        "title": "Sistema hospitalario",
+        "description": "Es un sistema web desarrollado con Supabase y Next.js, surge como proyecto final de la materia de 'Administración de proyectos informáticos', cuenta principalmente con control de farmacia, citas y consultas médicas."
     }
 }

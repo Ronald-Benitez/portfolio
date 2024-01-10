@@ -5,6 +5,7 @@ import SkillsSection from './components/app/skills-section';
 import TrainingSection from './components/app/training-section';
 import ProjectsSection from './components/app/projects-section';
 import ContactSection from './components/app/contact-section';
+import WorkingSection from './components/app/working-section';
 
 function App() {
 
@@ -23,7 +24,10 @@ function App() {
       <section className="w-full mx-auto py-5 bg-slate-100" id='projects-section'>
         <ProjectsSection />
       </section>
-      <section className="w-full mx-auto py-5" id='contact-section'>
+      <section className="w-full mx-auto py-5" id='working-section'>
+        <WorkingSection />
+      </section>
+      <section className="w-full mx-auto py-5 bg-slate-100" id='contact-section'>
         <ContactSection />
       </section>
     </div>

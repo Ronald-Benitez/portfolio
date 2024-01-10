@@ -3,6 +3,7 @@
     "projects": "Projects",
     "contact": "Contact",
     "training": "Training",
+    "working": "What I'm doing?",
     "main-section": {
         "title": "Hello, I'm",
         "name": "Ronald",
@@ -30,9 +31,18 @@
         "technologies": "Used Technologies",
         "links": "Links"
     },
+    "working-section": {
+        "title": "What I'm doing?",
+        "description": "Currently, I am making continuous improvements to 'Eco'. I plan to incorporate the Spanish version, following a format similar to that of this portfolio. In addition, I am immersed in the development of a page for the management of a family business, using technologies such as Next.js for the construction of the site and Vercel for its hosting, while the information is backed up using PostgreSQL.",
+        "technologies": "Technologies used"
+    },
     "eco": {
         "title": "Eco",
         "description": "Eco is a mobile application developed with React Native and Expo. This application enables users to track their expenses and income, set savings goals, and maintain a daily record of their activities."
+    },
+    "family-business": {
+        "title": "Family Business",
+        "description": "This is a web application developed with Next.js and TailwindCSS. It is intended to be used by a family business to manage its products, and sales. The information is stored in a PostgreSQL database and the application is hosted on Vercel."
     }
     
 }

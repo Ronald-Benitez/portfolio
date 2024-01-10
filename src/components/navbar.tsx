@@ -8,7 +8,8 @@ const navbarItems = [
     { name: 'skills', href: '#skills-section' },
     { name: "training", href: "#training-section" },
     { name: 'projects', href: '#projects-section' },
-    { name: 'contact', href: '#contact-section' }
+    { name: 'working', href: '#working-section' },
+    { name: 'contact', href: '#contact-section' },
 ];
 
 const Navbar = () => {

@@ -1,9 +1,11 @@
 import {
     IconBrandGithub,
-    IconBrandReactNative,
-    IconDownload
+    IconDownload,
+    IconBrandYoutube
 } from '@tabler/icons-react'
 import { useTranslation } from "react-i18next"
+
+import Icons, { Props as IconsProps } from '../utils/icons'
 
 function ProjectsSection() {
     const { t } = useTranslation()
@@ -14,11 +16,28 @@ function ProjectsSection() {
             description: t("eco.description"),
             image: "eco-logo.png",
             technologies: [
-                <IconBrandReactNative size={28} />,
-                <img src="expo-logo.svg" alt="expo" className="size-7" />
+                "React Native",
+                "Expo",
+                "JavaScript",
+                "SQLite"
             ],
             url: "https://play.google.com/store/apps/details?id=com.empanada.All",
+            btnIcon : <IconDownload size={25} />,
             source: "https://github.com/Ronald-Benitez/All.git"
+        },
+        {
+            name: t("sh.title"),
+            description: t("sh.description"),
+            image: "sh-logo.ico",
+            technologies: [
+                "React",
+                "TypeScript",
+                "NextJS",
+                "Supabase"
+            ],
+            url: "https://youtu.be/229d9n0L3vw",
+            btnIcon : <IconBrandYoutube size={25} />,
+            source: "https://github.com/Ronald-Benitez/sh"
         }
     ]
 
@@ -31,7 +50,7 @@ function ProjectsSection() {
                 projects.map((item, i) => (
                     <div
                         key={i}
-                        className="flex flex-col justify-center items-center mt-4"
+                        className="flex flex-col justify-center items-center mt-4 border-t py-4"
                     >
                         <img
                             src={item.image}
@@ -47,16 +66,7 @@ function ProjectsSection() {
                         <h3 className="text-center mt-4 max-w-prose p-2 font-bold">
                             {t("projects-section.technologies")}
                         </h3>
-                        <div className="flex justify-center mt-4 gap-2">
-                            {
-                                item.technologies.map((technology, index) => (
-                                    <div key={index}>
-                                        {technology}
-                                    </div>
-                                ))
-                            }
-                        </div>
-
+                        <Icons icons={item.technologies as IconsProps["icons"]} />
                         <h3 className="text-center mt-4 max-w-prose p-2 font-bold">
                             {t("projects-section.links")}
                         </h3>
@@ -66,7 +76,7 @@ function ProjectsSection() {
                                 className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2"
                                 target="_blank"
                             >
-                                <IconDownload size={25} />
+                                {item.btnIcon}
                             </a>
                             <a
                                 href={item.source}
