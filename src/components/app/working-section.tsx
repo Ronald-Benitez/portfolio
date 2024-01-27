@@ -11,6 +11,12 @@ function WorkingSection() {
             description: t("family-business.description"),
             source: "https://github.com/Ronald-Benitez/inventory",
             technologies: ["NextJS", "TypeScript", "Vercel", "PostgreSQL"] as IconsProps["icons"]
+        },
+        {
+            name: t("restaurant.title"),
+            description: t("restaurant.description"),
+            source: "",
+            technologies: ["Vite", "JavaScript", "Firebase", "React"] as IconsProps["icons"]
         }
     ]
 
@@ -26,7 +32,7 @@ function WorkingSection() {
                 working.map((item, i) => (
                     <div
                         key={i}
-                        className="flex flex-col justify-center items-center mt-4"
+                        className="flex flex-col justify-center items-center mt-4 p-2 rounded-md shadow-md"
                     >
                         <h2 className="text-2xl text-center mt-4 p-2 truncate">
                             {item.name}
@@ -38,15 +44,17 @@ function WorkingSection() {
                             {t("working-section.technologies")}
                         </h3>
                         <Icons icons={item.technologies} />
-                        <div className="flex justify-center mt-4 gap-2">
-                            <a
-                                className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm"
-                                href={item.source}
-                                target="_blank"
-                            >
-                                <IconBrandGithub size={25} />
-                            </a>
-                        </div>
+                        {item.source && (
+                            <div className="flex justify-center mt-4 gap-2">
+                                <a
+                                    className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm"
+                                    href={item.source}
+                                    target="_blank"
+                                >
+                                    <IconBrandGithub size={25} />
+                                </a>
+                            </div>
+                        )}
                     </div>
                 ))
             }

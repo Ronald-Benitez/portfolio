@@ -22,7 +22,7 @@ function ProjectsSection() {
                 "SQLite"
             ],
             url: "https://play.google.com/store/apps/details?id=com.empanada.All",
-            btnIcon : <IconDownload size={25} />,
+            btnIcon: <IconDownload size={25} />,
             source: "https://github.com/Ronald-Benitez/All.git"
         },
         {
@@ -36,7 +36,7 @@ function ProjectsSection() {
                 "Supabase"
             ],
             url: "https://youtu.be/229d9n0L3vw",
-            btnIcon : <IconBrandYoutube size={25} />,
+            btnIcon: <IconBrandYoutube size={25} />,
             source: "https://github.com/Ronald-Benitez/sh"
         }
     ]
@@ -50,7 +50,7 @@ function ProjectsSection() {
                 projects.map((item, i) => (
                     <div
                         key={i}
-                        className="flex flex-col justify-center items-center mt-4 border-t py-4"
+                        className="flex flex-col justify-center items-center mt-4 py-4 shadow-md rounded-md"
                     >
                         <img
                             src={item.image}

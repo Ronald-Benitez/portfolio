@@ -21,7 +21,7 @@
     },
     "training-section": {
         "academic": "Academic",
-        "academic-description": "Currently, I have completed my fifth year in the Computer Systems Engineering program at the University of El Salvador and I am in the graduation process.",
+        "academic-description": "Graduated from the Computer Systems Engineering degree at the University of El Salvador.",
         "self-taught": "Self-taught",
         "self-taught-description": "Self-taught, I have acquired knowledge in web application development using React and React Native. Additionally, I have explored the use of tools such as Firebase, TailwindCSS, Supabase, among others. I have also developed skills in using version control tools like Git and GitHub.",
         "english": "English",
@@ -33,7 +33,7 @@
     },
     "working-section": {
         "title": "What I'm doing?",
-        "description": "Currently, I am making continuous improvements to 'Eco'. I plan to incorporate the Spanish version, following a format similar to that of this portfolio. In addition, I am immersed in the development of a page for the management of a family business, using technologies such as Next.js for the construction of the site and Vercel for its hosting, while the information is backed up using PostgreSQL.",
+        "description": "Currently, I am making continuous improvements to 'Eco'. In addition, I am immersed in the development of a page for the management of a family business and in the development of a website for a restaurant.",
         "technologies": "Technologies used"
     },
     "eco": {
@@ -47,5 +47,9 @@
     "sh":{
         "title": "SH",
         "description": "It is a web system developed with Supabase and Next.js, it arises as a final project of the 'Computer Project Management' subject, it mainly has pharmacy control, appointments and medical consultations.."
-    }    
+    },
+    "restaurant":{
+        "title": "Restaurant",
+        "description": "It is a website developed with Vite and Firebase, it is a project developed with a multidisciplinary team in which I am part of the development team."  
+    }   
 }

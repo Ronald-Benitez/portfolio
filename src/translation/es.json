@@ -21,7 +21,7 @@
     },
     "training-section":{
         "academic": "Académica",
-        "academic-description": "Actualmente, he completado mi quinto año en la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador y estoy en proceso de egreso.",
+        "academic-description": "Egresado la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador.",
         "self-taught": "Autodidacta",
         "self-taught-description": "De manera autodidacta, he adquirido conocimientos en el desarrollo de aplicaciones web con React y React Native. Además, he explorado el uso de herramientas como Firebase, TailwindCSS, Supabase, entre otras. También he desarrollado habilidades en el manejo de herramientas de control de versiones como Git y GitHub.",
         "english": "Inglés",
@@ -33,7 +33,7 @@
     },
     "working-section": {
         "title": "¿Qué estoy haciendo?",
-        "description": "En la actualidad, estoy llevando a cabo mejoras continuas en 'Eco'. Tengo previsto incorporar la versión en español, siguiendo un formato similar al de este portafolio. Además, estoy inmerso en el desarrollo de una página para la gestión de un negocio familiar, utilizando tecnologías como Next.js para la construcción del sitio y Vercel para su alojamiento, mientras que la información se respalda mediante PostgreSQL.",
+        "description": "En la actualidad, estoy llevando a cabo mejoras continuas en 'Eco'. Además, estoy inmerso en el desarrollo de una página para la gestión de un negocio familiar y en el desarrollo de un sitio web para un restaurante",
         "technologies": "Tecnologías utilizadas"
     },
     "eco":{
@@ -47,5 +47,9 @@
     "sh":{
         "title": "SH",
         "description": "Es un sistema web desarrollado con Supabase y Next.js, surge como proyecto final de la materia de 'Administración de proyectos informáticos', cuenta principalmente con control de farmacia, citas y consultas médicas."
+    },
+    "restaurant":{
+        "title": "Restaurante",
+        "description": "Es un sitio web desarrollado con Vite  y Firebase, es un proyecto desarrollado con un equipo multidisciplinario en el cual estoy dentro del equipo de desarrollo."
     }
 }
