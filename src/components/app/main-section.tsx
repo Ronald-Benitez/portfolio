@@ -14,7 +14,7 @@ function MainSection() {
 
     const handleDownloadCV = () => {
         const lang = i18n.language === "es" ? "es" : "en"
-        window.open(`/Ronald-Benitez-CV-(${lang}).pdf`, "_blank")
+        window.open(`/Ronald-Benítez-CV-(${lang}).pdf`, "_blank")
     }
 
     return (
@@ -51,7 +51,7 @@ function MainSection() {
 
             <div className="flex justify-center mt-4">
                 <a
-                    className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm"
+                    className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm cursor-pointer"
                     onClick={handleDownloadCV}
                 >
                     {t('main-section.button')}
