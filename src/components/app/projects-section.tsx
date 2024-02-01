@@ -34,7 +34,8 @@ function ProjectsSection() {
                 "React",
                 "TypeScript",
                 "NextJS",
-                "Supabase"
+                "Supabase",
+                "TailwindCSS"
             ],
             url: "https://youtu.be/229d9n0L3vw",
             btnIcon: <IconBrandYoutube size={25} />,

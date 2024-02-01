@@ -10,7 +10,7 @@ function WorkingSection() {
             name: t("family-business.title"),
             description: t("family-business.description"),
             source: "https://github.com/Ronald-Benitez/inventory",
-            technologies: ["NextJS", "TypeScript", "Vercel", "PostgreSQL"] as IconsProps["icons"]
+            technologies: ["NextJS", "TypeScript", "Vercel", "PostgreSQL", "TailwindCSS"] as IconsProps["icons"]
         },
         {
             name: t("restaurant.title"),

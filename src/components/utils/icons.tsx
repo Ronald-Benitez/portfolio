@@ -12,7 +12,8 @@ import {
     IconBrandGit,
     IconBrandGithub,
     IconBrandGithubCopilot,
-    IconBrandRedux
+    IconBrandRedux,
+    IconBrandTailwind
 } from "@tabler/icons-react"
 
 
@@ -88,6 +89,10 @@ const options = {
     "Redux Toolkit": {
         "name": "Redux Toolkit",
         "icon": <IconBrandRedux size={28} />
+    },
+    "TailwindCSS": {
+        "name": "TailwindCSS",
+        "icon": <IconBrandTailwind size={28} />
     },
 }
 
