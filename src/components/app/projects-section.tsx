@@ -19,7 +19,8 @@ function ProjectsSection() {
                 "React Native",
                 "Expo",
                 "JavaScript",
-                "SQLite"
+                "SQLite",
+                "Redux Toolkit"
             ],
             url: "https://play.google.com/store/apps/details?id=com.empanada.All",
             btnIcon: <IconDownload size={25} />,

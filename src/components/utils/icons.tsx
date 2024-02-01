@@ -11,7 +11,8 @@ import {
     IconBrandVercel,
     IconBrandGit,
     IconBrandGithub,
-    IconBrandGithubCopilot
+    IconBrandGithubCopilot,
+    IconBrandRedux
 } from "@tabler/icons-react"
 
 
@@ -83,7 +84,11 @@ const options = {
     "SQLite": {
         "name": "SQLite",
         "icon": <img src="sqlite-logo.svg" alt="sqlite" className="size-7" />
-    }
+    },
+    "Redux Toolkit": {
+        "name": "Redux Toolkit",
+        "icon": <IconBrandRedux size={28} />
+    },
 }
 
 
@@ -91,7 +96,7 @@ function Icons({ icons }: Props) {
 
     return (
         <>
-            <div className="flex flex-wrap gap-5 items-center justify-center mt-2">
+            <div className="flex flex-wrap gap-5 items-center justify-center mt-2 p-2">
                 {
                     icons.map((item, i) => (
                         <div className="flex flex-col justify-center items-center" key={i}>

@@ -22,7 +22,8 @@ function SkillsSection() {
     "Vercel",
     "Git",
     "Github",
-    "Github Copilot"
+    "Github Copilot",
+    "Redux Toolkit"
   ]
 
   return (
