@@ -23,7 +23,8 @@ function SkillsSection() {
     "Git",
     "Github",
     "Github Copilot",
-    "Redux Toolkit"
+    "Redux Toolkit",
+    "TailwindCSS"
   ]
 
   return (
