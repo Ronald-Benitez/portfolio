@@ -35,15 +35,21 @@ function SkillsSection() {
       <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
         {t('skills-section.languages')}
       </h2>
-      <Icons icons={languages as IconsProps["icons"]} />
+      <div className='max-w-[500px]'>
+        <Icons icons={languages as IconsProps["icons"]} />
+      </div>
       <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
         {t('skills-section.frameworks')}
       </h2>
-      <Icons icons={frameworks as IconsProps["icons"]} />
+      <div className='max-w-[500px]'>
+        <Icons icons={frameworks as IconsProps["icons"]} />
+      </div>
       <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
         {t('skills-section.tools')}
       </h2>
-      <Icons icons={tools as IconsProps["icons"]} />
+      <div className='max-w-[500px]'>
+        <Icons icons={tools as IconsProps["icons"]} />
+      </div>
 
     </div>
   )
