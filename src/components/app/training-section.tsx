@@ -23,18 +23,20 @@ function TrainingSection() {
             <h1 className="text-4xl text-center p-2 truncate">
                 {t('training')}
             </h1>
-            {
-                training.map((item, i) => (
-                    <div className="flex flex-col justify-center items-center" key={i}>
-                        <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty">
-                            {item.title}
-                        </h2>
-                        <p className="text-center text-balance mt-4 max-w-prose p-2">
-                            {item.description}
-                        </p>
-                    </div>
-                ))
-            }
+            <div className="flex flex-row flex-wrap justify-center">
+                {
+                    training.map((item, i) => (
+                        <div className="flex flex-col justify-center items-center" key={i}>
+                            <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty">
+                                {item.title}
+                            </h2>
+                            <p className="text-center text-balance mt-4 max-w-prose p-2">
+                                {item.description}
+                            </p>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
 }

@@ -8,21 +8,20 @@ function SkillsSection() {
   const languages = ["TypeScript", "JavaScript"]
 
   const frameworks = [
-    "NodeJS",
     "React",
-    "NextJS",
-    "Vite",
     "React Native",
+    "NextJS",
   ]
 
   const tools = [
+    "NodeJS",
+    "Vite",
     "Expo",
     "Firebase",
     "Supabase",
     "Vercel",
     "Git",
     "Github",
-    "Github Copilot",
     "Redux Toolkit",
     "TailwindCSS"
   ]
@@ -32,22 +31,24 @@ function SkillsSection() {
       <h1 className="text-4xl text-center p-2 truncate">
         {t('skills')}
       </h1>
-      <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
-        {t('skills-section.languages')}
-      </h2>
-      <div className='max-w-[500px]'>
-        <Icons icons={languages as IconsProps["icons"]} />
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20'>
+        <div className='max-w-[500px]'>
+          <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
+            {t('skills-section.languages')}
+          </h2>
+          <Icons icons={languages as IconsProps["icons"]} style='grid grid-cols-2 gap-2' />
+        </div>
+        <div className='max-w-[500px]'>
+          <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
+            {t('skills-section.frameworks')}
+          </h2>
+          <Icons icons={frameworks as IconsProps["icons"]} style='grid grid-cols-2 gap-2' />
+        </div>
       </div>
-      <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
-        {t('skills-section.frameworks')}
-      </h2>
       <div className='max-w-[500px]'>
-        <Icons icons={frameworks as IconsProps["icons"]} />
-      </div>
-      <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
-        {t('skills-section.tools')}
-      </h2>
-      <div className='max-w-[500px]'>
+        <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
+          {t('skills-section.tools')}
+        </h2>
         <Icons icons={tools as IconsProps["icons"]} />
       </div>
 

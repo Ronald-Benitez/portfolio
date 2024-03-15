@@ -18,7 +18,8 @@ import {
 
 
 export interface Props {
-    icons: (keyof typeof options)[]
+    icons: (keyof typeof options)[],
+    style?: string
 }
 
 const options = {
@@ -97,11 +98,11 @@ const options = {
 }
 
 
-function Icons({ icons }: Props) {
+function Icons({ icons, style }: Props) {
 
     return (
         <>
-            <div className="flex flex-wrap gap-5 items-center justify-center mt-2 p-2">
+            <div className={style ? style : 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4'}>
                 {
                     icons.map((item, i) => (
                         <div className="flex flex-col justify-center items-center" key={i}>

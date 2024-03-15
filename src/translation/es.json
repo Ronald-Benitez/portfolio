@@ -33,7 +33,7 @@
     },
     "working-section": {
         "title": "¿Qué estoy haciendo?",
-        "description": "En la actualidad, estoy llevando a cabo mejoras continuas en 'Eco'. Además, estoy inmerso en el desarrollo de una página para la gestión de un negocio familiar y en el desarrollo de un sitio web para un restaurante",
+        "description": "Actualmente estoy actualizando 'Eco' con Expo SDK 50 y Expo Router v2, mientras implemento cambios en funcionalidad, diseño y adopto TypeScript. También estoy desarrollando un sitio web para un restaurante.",
         "technologies": "Tecnologías utilizadas"
     },
     "eco":{

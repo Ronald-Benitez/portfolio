@@ -7,6 +7,11 @@ import { useTranslation } from "react-i18next"
 
 import Icons, { Props as IconsProps } from '../utils/icons'
 
+type Source = {
+    href: string
+    text: string
+}
+
 function ProjectsSection() {
     const { t } = useTranslation()
 
@@ -20,11 +25,21 @@ function ProjectsSection() {
                 "Expo",
                 "JavaScript",
                 "SQLite",
-                "Redux Toolkit"
+                "Redux Toolkit",
+                "TypeScript"
             ],
             url: "https://play.google.com/store/apps/details?id=com.empanada.All",
             btnIcon: <IconDownload size={25} />,
-            source: "https://github.com/Ronald-Benitez/All.git"
+            source: [
+                {
+                    href: "https://github.com/Ronald-Benitez/All.git",
+                    text: "V1"
+                },
+                {
+                    href: "https://github.com/Ronald-Benitez/Eco.git",
+                    text: "V2"
+                }
+            ]
         },
         {
             name: t("sh.title"),
@@ -39,7 +54,12 @@ function ProjectsSection() {
             ],
             url: "https://youtu.be/229d9n0L3vw",
             btnIcon: <IconBrandYoutube size={25} />,
-            source: "https://github.com/Ronald-Benitez/sh"
+            source: [
+                {
+                    href: "https://github.com/Ronald-Benitez/sh",
+                    text: ""
+                }
+            ]
         }
     ]
 
@@ -73,26 +93,38 @@ function ProjectsSection() {
                             {t("projects-section.links")}
                         </h3>
                         <div className="flex justify-center mt-4">
-                            <a
-                                href={item.url}
-                                className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2"
-                                target="_blank"
-                            >
-                                {item.btnIcon}
-                            </a>
-                            <a
-                                href={item.source}
-                                className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2"
-                                target="_blank"
-                            >
-                                <IconBrandGithub size={25} />
-                            </a>
+                            <div className='flex flex-col'>
+                                <a
+                                    href={item.url}
+                                    className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2 "
+                                    target="_blank"
+                                >
+                                    {item.btnIcon}
+                                </a>
+                                <p></p>
+                            </div>
+                            {
+                                item.source.map((source: Source, i: number) => (
+                                    <div className='flex flex-col'>
+                                        <a
+                                            key={i}
+                                            href={source.href}
+                                            className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2"
+                                            target="_blank"
+                                        >
+                                            <IconBrandGithub size={25} />
+                                        </a>
+                                        <p className="text-xs text-center">{source.text}</p>
+                                    </div>
+                                ))
+                            }
+
                         </div>
                     </div>
                 ))
             }
 
-        </div>
+        </div >
     )
 }
 
