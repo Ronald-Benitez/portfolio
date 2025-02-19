@@ -14,7 +14,7 @@ function MainSection() {
 
     const handleDownloadCV = () => {
         const lang = i18n.language === "es" ? "es" : "en"
-        window.open(`/Ronald-Benítez-CV-(${lang}).pdf`, "_blank")
+        window.open(`/Ronald-Benitez-cv-${lang}.pdf`, "_blank")
     }
 
     return (

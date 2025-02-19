@@ -1,7 +1,7 @@
 import {
     IconBrandGithub,
     IconDownload,
-    IconBrandYoutube
+    IconExternalLink
 } from '@tabler/icons-react'
 import { useTranslation } from "react-i18next"
 
@@ -17,51 +17,49 @@ function ProjectsSection() {
 
     const projects = [
         {
-            name: t("eco.title"),
-            description: t("eco.description"),
-            image: "eco-logo.png",
+            name: t("pockettool.title"),
+            description: t("pockettool.description"),
+            image: "pockettool-logo.png",
             technologies: [
                 "React Native",
                 "Expo",
                 "JavaScript",
                 "SQLite",
-                "Redux Toolkit",
+                "Zustand",
                 "TypeScript"
             ],
-            url: "https://play.google.com/store/apps/details?id=com.empanada.All",
+            url: "https://play.google.com/store/apps/details?id=com.empanada.PoketTool",
             btnIcon: <IconDownload size={25} />,
             source: [
                 {
-                    href: "https://github.com/Ronald-Benitez/All.git",
-                    text: "V1"
-                },
-                {
-                    href: "https://github.com/Ronald-Benitez/Eco.git",
-                    text: "V2"
+                    href: "https://github.com/Ronald-Benitez/PocketTool",
+                    text: "GitHub"
                 }
             ]
         },
         {
-            name: t("sh.title"),
-            description: t("sh.description"),
-            image: "sh-logo.ico",
+            name: t("conadem.title"),
+            description: t("conadem.description"),
             technologies: [
-                "React",
-                "TypeScript",
-                "NextJS",
-                "Supabase",
+                "Vue3",
                 "TailwindCSS"
             ],
-            url: "https://youtu.be/229d9n0L3vw",
-            btnIcon: <IconBrandYoutube size={25} />,
-            source: [
-                {
-                    href: "https://github.com/Ronald-Benitez/sh",
-                    text: ""
-                }
-            ]
+            url: "https://conadem.gob.sv/es",
+            btnIcon: <IconExternalLink size={25} />,
+            source: []
+        },
+        {
+            name: t("innovatech.title"),
+            description: t("innovatech.description"),
+            technologies: [
+                "Vue3",
+                "TailwindCSS"
+            ],
+            url: "https://innova.innovacion.gob.sv/",
+            btnIcon: <IconExternalLink size={25} />,
+            source: []
         }
-    ]
+    ];
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -74,21 +72,25 @@ function ProjectsSection() {
                         key={i}
                         className="flex flex-col justify-center items-center mt-4 py-4 shadow-md rounded-md"
                     >
-                        <img
-                            src={item.image}
-                            alt={item.name}
-                            className="rounded-full size-32"
-                        />
+                        {
+                            item.image && (
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    className="w-40 h-40 rounded-full"
+                                />
+                            )
+                        }
                         <h2 className="text-2xl text-center mt-4 p-2 truncate">
                             {item.name}
                         </h2>
-                        <p className="text-center mt-4 max-w-prose p-2">
+                        <p className="text-center mt-4 max-w-prose p-2 lg:px-10">
                             {item.description}
                         </p>
-                        <h3 className="text-center mt-4 max-w-prose p-2 font-bold">
+                        <h3 className="text-center mt-4 max-w-prose p-2 font-bold mb-4">
                             {t("projects-section.technologies")}
                         </h3>
-                        <Icons icons={item.technologies as IconsProps["icons"]} />
+                        <Icons icons={item.technologies as IconsProps["icons"]} style='flex justify-center flex-wrap gap-8 max-w-[400px]'/>
                         <h3 className="text-center mt-4 max-w-prose p-2 font-bold">
                             {t("projects-section.links")}
                         </h3>
@@ -105,16 +107,15 @@ function ProjectsSection() {
                             </div>
                             {
                                 item.source.map((source: Source, i: number) => (
-                                    <div className='flex flex-col'>
+                                    <div className='flex flex-col' key={i}>
                                         <a
-                                            key={i}
                                             href={source.href}
                                             className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2"
                                             target="_blank"
                                         >
                                             <IconBrandGithub size={25} />
                                         </a>
-                                        <p className="text-xs text-center">{source.text}</p>
+                                        {/* <p className="text-xs text-center">{source.text}</p> */}
                                     </div>
                                 ))
                             }

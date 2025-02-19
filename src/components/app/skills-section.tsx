@@ -10,19 +10,19 @@ function SkillsSection() {
   const frameworks = [
     "React",
     "React Native",
-    "NextJS",
+    "Vue3",
   ]
 
   const tools = [
     "NodeJS",
     "Vite",
     "Expo",
-    "Firebase",
-    "Supabase",
+    // "Firebase",
+    // "Supabase",
     "Vercel",
     "Git",
     "Github",
-    "Redux Toolkit",
+    "Zustand",
     "TailwindCSS"
   ]
 
@@ -33,23 +33,23 @@ function SkillsSection() {
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20'>
         <div className='max-w-[500px]'>
-          <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
+          <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-10">
             {t('skills-section.languages')}
           </h2>
-          <Icons icons={languages as IconsProps["icons"]} style='grid grid-cols-2 gap-2' />
+          <Icons icons={languages as IconsProps["icons"]} style='grid grid-cols-2 gap-8' />
         </div>
         <div className='max-w-[500px]'>
-          <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
+          <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-10">
             {t('skills-section.frameworks')}
           </h2>
-          <Icons icons={frameworks as IconsProps["icons"]} style='grid grid-cols-2 gap-2' />
+          <Icons icons={frameworks as IconsProps["icons"]} style='grid grid-cols-2 gap-8' />
         </div>
       </div>
       <div className='max-w-[500px]'>
-        <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-5">
+        <h2 className="text-2xl text-center mt-8 p-2 truncate text-pretty mb-10">
           {t('skills-section.tools')}
         </h2>
-        <Icons icons={tools as IconsProps["icons"]} />
+        <Icons icons={tools as IconsProps["icons"]} style='grid grid-cols-2 lg:grid-cols-4 gap-8'/>
       </div>
 
     </div>

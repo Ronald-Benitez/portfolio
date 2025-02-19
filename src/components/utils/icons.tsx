@@ -13,7 +13,8 @@ import {
     IconBrandGithub,
     IconBrandGithubCopilot,
     IconBrandRedux,
-    IconBrandTailwind
+    IconBrandTailwind,
+    IconBrandVue,
 } from "@tabler/icons-react"
 
 
@@ -95,6 +96,14 @@ const options = {
         "name": "TailwindCSS",
         "icon": <IconBrandTailwind size={28} />
     },
+    "Zustand": {
+        "name": "Zustand",
+        "icon": <img src="zustand.png" alt="zustand" className="size-7" />
+    },
+    "Vue3": {
+        "name": "Vue3",
+        "icon": <IconBrandVue size={28} />
+    },
 }
 
 
@@ -106,9 +115,9 @@ function Icons({ icons, style }: Props) {
                 {
                     icons.map((item, i) => (
                         <div className="flex flex-col justify-center items-center" key={i}>
-                            {options[item].icon}
+                            {options[item]?.icon}
                             <p className="text-center text-balance mt-4 max-w-prose p-2">
-                                {options[item].name}
+                                {options[item]?.name}
                             </p>
                         </div>
                     ))

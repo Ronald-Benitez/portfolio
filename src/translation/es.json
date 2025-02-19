@@ -4,12 +4,25 @@
     "contact": "Contacto",
     "training": "Formación",
     "working": "¿Qué estoy haciendo?",
-    "main-section":{
+    "main-section": {
         "title": "Hola, soy",
         "name": "Ronald",
         "lastname": "Benítez",
-        "description": "Un entusiasta desarrollador web y móvil. Actualmente estoy inmerso en el aprendizaje de React y React Native, utilizando tecnologías como Next.js y Expo.",
+        "description": "Un entusiasta desarrollador web y móvil. Actualmente trabajo en la Secretaría de Innovación como desarrollador frontend, utilizando tecnologías como Vue 3, React y TailwindCSS. Además, sigo desarrollando PocketTool en mi tiempo libre.",
         "button": "Descargar CV"
+    },
+    "training-section": {
+        "academic": "Académica",
+        "academic-description": "Graduado de la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador.",
+        "self-taught": "Autodidacta",
+        "self-taught-description": "De manera autodidacta, he adquirido conocimientos en el desarrollo de aplicaciones web con React, React Native y Vue 3. Además, he explorado el uso de herramientas como TailwindCSS, entre otras. También he desarrollado habilidades en el manejo de herramientas de control de versiones como Git y GitHub.",
+        "english": "Inglés",
+        "english-description": "Conocimiento básico del idioma inglés, principalmente en comprensión lectora. Actualmente me encuentro en proceso de aprendizaje del idioma."
+    },
+    "working-section": {
+        "title": "¿Qué estoy haciendo?",
+        "description": "Actualmente trabajo como desarrollador frontend en la Secretaría de Innovación, donde participo en el desarrollo de aplicaciones web con Vue 3, React y TailwindCSS. Además, en mi tiempo libre sigo mejorando PocketTool, incorporando nuevas funcionalidades y optimizando su rendimiento.",
+        "technologies": "Tecnologías utilizadas"
     },
     "toast":{
         "email": "Correo copiado al portapapeles"
@@ -19,22 +32,9 @@
         "frameworks": "Frameworks/Librerías",
         "tools": "Herramientas"
     },
-    "training-section":{
-        "academic": "Académica",
-        "academic-description": "Egresado la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador.",
-        "self-taught": "Autodidacta",
-        "self-taught-description": "De manera autodidacta, he adquirido conocimientos en el desarrollo de aplicaciones web con React y React Native. Además, he explorado el uso de herramientas como Firebase, TailwindCSS, Supabase, entre otras. También he desarrollado habilidades en el manejo de herramientas de control de versiones como Git y GitHub.",
-        "english": "Inglés",
-        "english-description": "Conocimiento básico del idioma inglés. Actualmente me encuentro en proceso de aprendizaje del idioma."
-    },
     "projects-section":{
         "technologies": "Tecnologías utilizadas",
         "links": "Enlaces"
-    },
-    "working-section": {
-        "title": "¿Qué estoy haciendo?",
-        "description": "Actualmente estoy actualizando 'Eco' con Expo SDK 50 y Expo Router v2, mientras implemento cambios en funcionalidad, diseño y adopto TypeScript. También estoy desarrollando un sitio web para un restaurante.",
-        "technologies": "Tecnologías utilizadas"
     },
     "eco":{
         "title": "Eco",
@@ -51,5 +51,17 @@
     "restaurant":{
         "title": "Restaurante",
         "description": "Es un sitio web desarrollado con Vite  y Firebase, es un proyecto desarrollado con un equipo multidisciplinario en el cual estoy dentro del equipo de desarrollo."
+    },
+    "pockettool": {
+        "title": "PocketTool",
+        "description": "Aplicación móvil para la gestión de finanzas personales, permitiendo el control de ingresos, gastos y objetivos de ahorro."
+    },
+    "conadem": {
+        "title": "Conadem",
+        "description": "Participación en el desarrollo de la landing page y la plataforma administrativa para el Consejo Nacional de Evaluación y Acreditación."
+    },
+    "innovatech": {
+        "title": "Innovatech",
+        "description": "Participación en el desarrollo de la landing page para el portal de Innovación y Tecnología del gobierno."
     }
 }

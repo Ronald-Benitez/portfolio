@@ -8,8 +8,21 @@
         "title": "Hello, I'm",
         "name": "Ronald",
         "lastname": "Benítez",
-        "description": "An enthusiastic web and mobile developer. Currently, I'm immersed in learning React and React Native, using technologies like Next.js and Expo.",
+        "description": "An enthusiastic web and mobile developer. I currently work as a frontend developer at the Secretariat of Innovation, using technologies such as Vue 3, React, and TailwindCSS. Additionally, I continue developing PocketTool in my free time.",
         "button": "Download CV"
+    },
+    "training-section": {
+        "academic": "Academic",
+        "academic-description": "Graduated from the Computer Systems Engineering program at the University of El Salvador.",
+        "self-taught": "Self-taught",
+        "self-taught-description": "Through self-learning, I have acquired knowledge in web application development using React, React Native, and Vue 3. Additionally, I have explored tools like TailwindCSS, among others. I have also developed skills in version control tools such as Git and GitHub.",
+        "english": "English",
+        "english-description": "Basic knowledge of the English language, primarily in reading comprehension. I am currently in the process of learning it."
+    },
+    "working-section": {
+        "title": "What I'm doing?",
+        "description": "I currently work as a frontend developer at the Secretariat of Innovation, where I participate in the development of web applications using Vue 3, React, and TailwindCSS. Additionally, in my free time, I continue improving PocketTool, incorporating new features and optimizing its performance.",
+        "technologies": "Technologies used"
     },
     "toast":{
         "email": "Email copied to clipboard"
@@ -19,22 +32,9 @@
         "frameworks": "Frameworks/Libraries",
         "tools": "Tools"
     },
-    "training-section": {
-        "academic": "Academic",
-        "academic-description": "Graduated from the Computer Systems Engineering degree at the University of El Salvador.",
-        "self-taught": "Self-taught",
-        "self-taught-description": "Self-taught, I have acquired knowledge in web application development using React and React Native. Additionally, I have explored the use of tools such as Firebase, TailwindCSS, Supabase, among others. I have also developed skills in using version control tools like Git and GitHub.",
-        "english": "English",
-        "english-description": "Basic knowledge of the English language. I am currently in the process of learning the language."
-    },
     "projects-section": {
         "technologies": "Used Technologies",
         "links": "Links"
-    },
-    "working-section": {
-        "title": "What I'm doing?",
-        "description": "I'm currently updating 'Eco' with Expo SDK 50 and Expo Router v2, while implementing changes to functionality, design, and adopting TypeScript. I am also developing a website for a restaurant.",
-        "technologies": "Technologies used"
     },
     "eco": {
         "title": "Eco",
@@ -51,5 +51,18 @@
     "restaurant":{
         "title": "Restaurant",
         "description": "It is a website developed with Vite and Firebase, it is a project developed with a multidisciplinary team in which I am part of the development team."  
-    }   
+    },  
+    "pockettool": {
+        "title": "PocketTool",
+        "description": "Mobile application for personal finance management, allowing users to track income, expenses, and savings goals."
+    },
+    "conadem": {
+        "title": "Conadem",
+        "description": "Participation in the development of the landing page and administrative platform for the National Council for Evaluation and Accreditation."
+    },
+    "innovatech": {
+        "title": "Innovatech",
+        "description": "Participation in the development of the landing page for the government’s Innovation and Technology portal."
+    }
+
 }

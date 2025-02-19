@@ -6,19 +6,14 @@ function WorkingSection() {
     const { t } = useTranslation()
 
     const working = [
-        // {
-        //     name: t("family-business.title"),
-        //     description: t("family-business.description"),
-        //     source: "https://github.com/Ronald-Benitez/inventory",
-        //     technologies: ["NextJS", "TypeScript", "Vercel", "PostgreSQL", "TailwindCSS"] as IconsProps["icons"]
-        // },
         {
-            name: t("restaurant.title"),
-            description: t("restaurant.description"),
-            source: "",
-            technologies: ["Vite", "JavaScript", "Firebase", "React"] as IconsProps["icons"]
+            name: t("pockettool.title"),
+            description: t("pockettool.description"),
+            source: "https://github.com/Ronald-Benitez/PocketTool",
+            technologies: ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"] as IconsProps["icons"]
         }
-    ]
+    ];
+    
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -40,10 +35,10 @@ function WorkingSection() {
                         <p className="text-center mt-4 max-w-prose p-2">
                             {item.description}
                         </p>
-                        <h3 className="text-center mt-4 max-w-prose p-2 font-bold">
+                        <h3 className="text-center mt-4 max-w-prose p-2 font-bold mb-10">
                             {t("working-section.technologies")}
                         </h3>
-                        <Icons icons={item.technologies} />
+                        <Icons icons={item.technologies} style='grid grid-cols-4 gap-8'/>
                         {item.source && (
                             <div className="flex justify-center mt-4 gap-2">
                                 <a
