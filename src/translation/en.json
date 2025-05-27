@@ -21,7 +21,7 @@
     },
     "working-section": {
         "title": "What I'm doing?",
-        "description": "I currently work as a frontend developer at the Secretariat of Innovation, where I participate in the development of web applications using Vue 3, React, and TailwindCSS. Additionally, in my free time, I continue improving PocketTool, incorporating new features and optimizing its performance.",
+        "description": "I currently work as a frontend developer at the Secretariat of Innovation, where I participate in the development of web applications using Vue 3, React, and TailwindCSS. Additionally, in my free time, I continue improving PocketTool and EngQuiz, incorporating new features and optimizing its performance.",
         "technologies": "Technologies used"
     },
     "toast":{
@@ -55,6 +55,10 @@
     "pockettool": {
         "title": "PocketTool",
         "description": "Mobile application for personal finance management, allowing users to track income, expenses, and savings goals."
+    },
+    "engquiz": {
+        "title": "EngQuiz",
+        "description": "Web and mobile application developed to track my English classes with quizzes on the topics I receive."
     },
     "conadem": {
         "title": "Conadem",

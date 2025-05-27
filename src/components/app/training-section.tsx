@@ -1,9 +1,10 @@
+import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 
 function TrainingSection() {
     const { t } = useTranslation()
 
-    const training = [
+    const training = useMemo(() => ([
         {
             "title": t('training-section.academic'),
             "description": t('training-section.academic-description'),
@@ -16,7 +17,7 @@ function TrainingSection() {
             "title": t('training-section.english'),
             "description": t('training-section.english-description'),
         }
-    ]
+    ]), [t])
 
     return (
         <div className="flex flex-col justify-center items-center">

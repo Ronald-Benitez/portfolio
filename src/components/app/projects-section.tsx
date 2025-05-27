@@ -6,6 +6,7 @@ import {
 import { useTranslation } from "react-i18next"
 
 import Icons, { Props as IconsProps } from '../utils/icons'
+import { useMemo } from 'react'
 
 type Source = {
     href: string
@@ -15,7 +16,7 @@ type Source = {
 function ProjectsSection() {
     const { t } = useTranslation()
 
-    const projects = [
+    const projects = useMemo(() => ([
         {
             name: t("pockettool.title"),
             description: t("pockettool.description"),
@@ -28,11 +29,41 @@ function ProjectsSection() {
                 "Zustand",
                 "TypeScript"
             ],
-            url: "https://play.google.com/store/apps/details?id=com.empanada.PoketTool",
-            btnIcon: <IconDownload size={25} />,
+            links: [
+                {
+                    url: "https://play.google.com/store/apps/details?id=com.empanada.PoketTool",
+                    btnIcon: <IconDownload size={25} />
+                }
+            ],
             source: [
                 {
                     href: "https://github.com/Ronald-Benitez/PocketTool",
+                    text: "GitHub"
+                }
+            ]
+        },
+        {
+            name: t("engquiz.title"),
+            description: t("engquiz.description"),
+            image: "engquiz-logo.png",
+            technologies: [
+                "React Native",
+                "Expo",
+                "TypeScript"
+            ],
+            links: [
+                {
+                    url: "https://play.google.com/store/apps/details?id=com.empanada.EngQuiz",
+                    btnIcon: <IconDownload size={25} />
+                },
+                {
+                    url: "https://ronald-benitez.github.io/EngQuiz/",
+                    btnIcon: <IconExternalLink size={25} />
+                }
+            ],
+            source: [
+                {
+                    href: "https://github.com/Ronald-Benitez/EngQuiz",
                     text: "GitHub"
                 }
             ]
@@ -44,8 +75,12 @@ function ProjectsSection() {
                 "Vue3",
                 "TailwindCSS"
             ],
-            url: "https://conadem.gob.sv/es",
-            btnIcon: <IconExternalLink size={25} />,
+            links: [
+                {
+                    url: "https://conadem.gob.sv/es",
+                    btnIcon: <IconExternalLink size={25} />,
+                }
+            ],
             source: []
         },
         {
@@ -55,11 +90,15 @@ function ProjectsSection() {
                 "Vue3",
                 "TailwindCSS"
             ],
-            url: "https://innova.innovacion.gob.sv/",
-            btnIcon: <IconExternalLink size={25} />,
+            links: [
+                {
+                    url: "https://innova.innovacion.gob.sv/",
+                    btnIcon: <IconExternalLink size={25} />,
+                }
+            ],
             source: []
         }
-    ];
+    ]), [t]);
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -90,21 +129,24 @@ function ProjectsSection() {
                         <h3 className="text-center mt-4 max-w-prose p-2 font-bold mb-4">
                             {t("projects-section.technologies")}
                         </h3>
-                        <Icons icons={item.technologies as IconsProps["icons"]} style='flex justify-center flex-wrap gap-8 max-w-[400px]'/>
+                        <Icons icons={item.technologies as IconsProps["icons"]} style='flex justify-center flex-wrap gap-8 max-w-[400px]' />
                         <h3 className="text-center mt-4 max-w-prose p-2 font-bold">
                             {t("projects-section.links")}
                         </h3>
                         <div className="flex justify-center mt-4">
-                            <div className='flex flex-col'>
-                                <a
-                                    href={item.url}
-                                    className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2 "
-                                    target="_blank"
-                                >
-                                    {item.btnIcon}
-                                </a>
-                                <p></p>
-                            </div>
+                            {
+                                item.links.map((link, j) => (
+                                    <div className='flex flex-col' key={j}>
+                                        <a
+                                            href={link.url}
+                                            className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2"
+                                            target="_blank"
+                                        >
+                                            {link.btnIcon}
+                                        </a>
+                                    </div>
+                                ))
+                            }
                             {
                                 item.source.map((source: Source, i: number) => (
                                     <div className='flex flex-col' key={i}>
@@ -112,10 +154,10 @@ function ProjectsSection() {
                                             href={source.href}
                                             className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm mx-2"
                                             target="_blank"
+                                            title='GitHub Repository'
                                         >
                                             <IconBrandGithub size={25} />
                                         </a>
-                                        {/* <p className="text-xs text-center">{source.text}</p> */}
                                     </div>
                                 ))
                             }

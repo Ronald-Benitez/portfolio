@@ -16,6 +16,7 @@ function MailtToClipBoard({ children }: Props) {
     return (
         <>
             <button
+                type="button"
                 className="hover:text-gray-600 p-2"
                 onClick={mailtToClipBoard}
             >

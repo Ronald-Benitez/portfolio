@@ -2,29 +2,29 @@ import { useTranslation } from 'react-i18next'
 
 import Icons, { Props as IconsProps } from '../utils/icons'
 
+const languages = ["TypeScript", "JavaScript"]
+
+const frameworks = [
+  "React",
+  "React Native",
+  "Vue3",
+]
+
+const tools = [
+  "NodeJS",
+  "Vite",
+  "Expo",
+  // "Firebase",
+  // "Supabase",
+  "Vercel",
+  "Git",
+  "Github",
+  "Zustand",
+  "TailwindCSS"
+]
+
 function SkillsSection() {
   const { t } = useTranslation()
-
-  const languages = ["TypeScript", "JavaScript"]
-
-  const frameworks = [
-    "React",
-    "React Native",
-    "Vue3",
-  ]
-
-  const tools = [
-    "NodeJS",
-    "Vite",
-    "Expo",
-    // "Firebase",
-    // "Supabase",
-    "Vercel",
-    "Git",
-    "Github",
-    "Zustand",
-    "TailwindCSS"
-  ]
 
   return (
     <div className="flex flex-col justify-center items-center">

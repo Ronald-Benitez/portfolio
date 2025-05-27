@@ -114,7 +114,7 @@ function Icons({ icons, style }: Props) {
             <div className={style ? style : 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4'}>
                 {
                     icons.map((item, i) => (
-                        <div className="flex flex-col justify-center items-center" key={i}>
+                        <div className="flex flex-col justify-center items-center hover:scale-[110%]" key={i}>
                             {options[item]?.icon}
                             <p className="text-center text-balance mt-4 max-w-prose p-2">
                                 {options[item]?.name}

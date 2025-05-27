@@ -1,19 +1,25 @@
 import { useTranslation } from 'react-i18next'
 import { IconBrandGithub } from "@tabler/icons-react"
 import Icons, { Props as IconsProps } from '../utils/icons'
+import { useMemo } from 'react';
 
 function WorkingSection() {
     const { t } = useTranslation()
 
-    const working = [
+    const working = useMemo(() => ([
         {
             name: t("pockettool.title"),
             description: t("pockettool.description"),
             source: "https://github.com/Ronald-Benitez/PocketTool",
             technologies: ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"] as IconsProps["icons"]
+        },
+        {
+            name: t("engquiz.title"),
+            description: t("engquiz.description"),
+            source: "https://github.com/Ronald-Benitez/EngQuiz",
+            technologies: ["React Native", "Expo", "TypeScript"] as IconsProps["icons"]
         }
-    ];
-    
+    ]), [t]);
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -38,13 +44,14 @@ function WorkingSection() {
                         <h3 className="text-center mt-4 max-w-prose p-2 font-bold mb-10">
                             {t("working-section.technologies")}
                         </h3>
-                        <Icons icons={item.technologies} style='grid grid-cols-4 gap-8'/>
+                        <Icons icons={item.technologies} style='flex justify-center' />
                         {item.source && (
                             <div className="flex justify-center mt-4 gap-2">
                                 <a
                                     className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm"
                                     href={item.source}
                                     target="_blank"
+                                    title='GitHub Repository'
                                 >
                                     <IconBrandGithub size={25} />
                                 </a>
