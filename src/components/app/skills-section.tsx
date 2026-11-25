@@ -2,25 +2,22 @@ import { useTranslation } from 'react-i18next'
 
 import Icons, { Props as IconsProps } from '../utils/icons'
 
-const languages = ["TypeScript", "JavaScript"]
+const languages = ["TypeScript", "JavaScript", "HTML5", "CSS3"]
 
 const frameworks = [
   "React",
   "React Native",
   "Vue3",
+  "TailwindCSS",
 ]
 
 const tools = [
-  "NodeJS",
-  "Vite",
   "Expo",
-  // "Firebase",
-  // "Supabase",
-  "Vercel",
+  "SQLite",
   "Git",
   "Github",
-  "Zustand",
-  "TailwindCSS"
+  "Figma",
+  "OpenCode",
 ]
 
 function SkillsSection() {

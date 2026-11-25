@@ -15,6 +15,10 @@ import {
     IconBrandRedux,
     IconBrandTailwind,
     IconBrandVue,
+    IconBrandHtml5,
+    IconBrandCss3,
+    IconBrandFigma,
+    IconRobot,
 } from "@tabler/icons-react"
 
 
@@ -31,6 +35,14 @@ const options = {
     "JavaScript": {
         "name": "JavaScript",
         "icon": <IconBrandJavascript size={28} />
+    },
+    "HTML5": {
+        "name": "HTML5",
+        "icon": <IconBrandHtml5 size={28} />
+    },
+    "CSS3": {
+        "name": "CSS3",
+        "icon": <IconBrandCss3 size={28} />
     },
     "NodeJS": {
         "name": "NodeJS",
@@ -103,6 +115,14 @@ const options = {
     "Vue3": {
         "name": "Vue3",
         "icon": <IconBrandVue size={28} />
+    },
+    "Figma": {
+        "name": "Figma",
+        "icon": <IconBrandFigma size={28} />
+    },
+    "OpenCode": {
+        "name": "OpenCode",
+        "icon": <IconRobot size={28} />
     },
 }
 
