@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { IconClipboard } from "@tabler/icons-react"
+import { IconClipboard, IconMapPin, IconPhone } from "@tabler/icons-react"
 
 import MailtToClipBoard from "./mail-to-clipboard"
 
@@ -20,6 +20,19 @@ function ContactSection() {
                 <MailtToClipBoard>
                     <IconClipboard size={25} />
                 </MailtToClipBoard>
+            </div>
+            <div className="flex flex-row flex-wrap justify-center items-center gap-5 mt-2">
+                <a
+                    href="tel:+50364426442"
+                    className="flex items-center gap-2 border-b border-black p-2 hover:bg-gray-200"
+                >
+                    <IconPhone size={20} />
+                    +503 6442-6442
+                </a>
+                <p className="flex items-center gap-2 p-2">
+                    <IconMapPin size={20} />
+                    {t("main-section.location")}
+                </p>
             </div>
         </div>
     )
