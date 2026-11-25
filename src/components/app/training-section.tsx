@@ -14,6 +14,10 @@ function TrainingSection() {
             "description": t('training-section.self-taught-description'),
         },
         {
+            "title": t('training-section.accounting'),
+            "description": t('training-section.accounting-description'),
+        },
+        {
             "title": t('training-section.english'),
             "description": t('training-section.english-description'),
         }

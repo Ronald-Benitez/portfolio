@@ -15,10 +15,12 @@
     "training-section": {
         "academic": "Academic",
         "academic-description": "Graduated from the Computer Systems Engineering program at the University of El Salvador.",
-        "self-taught": "Self-taught",
-        "self-taught-description": "Through self-learning, I have acquired knowledge in web application development using React, React Native, and Vue 3. Additionally, I have explored tools like TailwindCSS, among others. I have also developed skills in version control tools such as Git and GitHub.",
+        "self-taught": "Self-taught & AI",
+        "self-taught-description": "AI-assisted development with OpenCode: structured instructions and context for agents (AGENTS.md), rapid prototyping, iterative refinement toward production code and prompt traceability. I also work with Git and GitHub, modular architecture and technical documentation.",
+        "accounting": "Accounting",
+        "accounting-description": "Vocational Technical High School Diploma in Accounting from Instituto Nacional Félix Ulloa, a background that adds value in business process analysis, financial indicator modeling and structured data control.",
         "english": "English",
-        "english-description": "Basic knowledge of the English language, primarily in reading comprehension. I am currently in the process of learning it."
+        "english-description": "Basic knowledge of the English language, mainly in reading comprehension. I am currently in the process of learning it."
     },
     "working-section": {
         "title": "What I'm doing?",

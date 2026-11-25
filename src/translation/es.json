@@ -14,9 +14,11 @@
     },
     "training-section": {
         "academic": "Académica",
-        "academic-description": "Graduado de la carrera de Ingeniería de Sistemas Informáticos en la Universidad de El Salvador.",
-        "self-taught": "Autodidacta",
-        "self-taught-description": "De manera autodidacta, he adquirido conocimientos en el desarrollo de aplicaciones web con React, React Native y Vue 3. Además, he explorado el uso de herramientas como TailwindCSS, entre otras. También he desarrollado habilidades en el manejo de herramientas de control de versiones como Git y GitHub.",
+        "academic-description": "Graduado de la carrera de Ingeniería en Sistemas Informáticos en la Universidad de El Salvador.",
+        "self-taught": "Autodidacta e IA",
+        "self-taught-description": "Desarrollo asistido por IA con OpenCode: definición de instrucciones y contexto estructurado para agentes (AGENTS.md), prototipado rápido, refinamiento iterativo hacia código de producción y trazabilidad de prompts. Además, manejo de Git y GitHub, arquitectura modular y documentación técnica.",
+        "accounting": "Contaduría",
+        "accounting-description": "Bachillerato Técnico Vocacional en Contaduría en el Instituto Nacional Félix Ulloa, formación que aporta valor en el análisis de procesos de negocio, el modelado de indicadores financieros y el control estructurado de datos.",
         "english": "Inglés",
         "english-description": "Conocimiento básico del idioma inglés, principalmente en comprensión lectora. Actualmente me encuentro en proceso de aprendizaje del idioma."
     },
