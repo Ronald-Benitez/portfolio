@@ -24,10 +24,8 @@ function ProjectsSection() {
             technologies: [
                 "React Native",
                 "Expo",
-                "JavaScript",
-                "SQLite",
-                "Zustand",
-                "TypeScript"
+                "TypeScript",
+                "SQLite"
             ],
             links: [
                 {
@@ -38,32 +36,6 @@ function ProjectsSection() {
             source: [
                 {
                     href: "https://github.com/Ronald-Benitez/PocketTool",
-                    text: "GitHub"
-                }
-            ]
-        },
-        {
-            name: t("engquiz.title"),
-            description: t("engquiz.description"),
-            image: "engquiz-logo.png",
-            technologies: [
-                "React Native",
-                "Expo",
-                "TypeScript"
-            ],
-            links: [
-                {
-                    url: "https://play.google.com/store/apps/details?id=com.empanada.EngQuiz",
-                    btnIcon: <IconDownload size={25} />
-                },
-                {
-                    url: "https://ronald-benitez.github.io/EngQuiz/",
-                    btnIcon: <IconExternalLink size={25} />
-                }
-            ],
-            source: [
-                {
-                    href: "https://github.com/Ronald-Benitez/EngQuiz",
                     text: "GitHub"
                 }
             ]

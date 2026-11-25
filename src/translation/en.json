@@ -39,37 +39,16 @@
         "technologies": "Used Technologies",
         "links": "Links"
     },
-    "eco": {
-        "title": "Eco",
-        "description": "Eco is a mobile application developed with React Native and Expo. This application enables users to track their expenses and income, set savings goals, and maintain a daily record of their activities."
-    },
-    "family-business": {
-        "title": "Family Business",
-        "description": "This is a web application developed with Next.js and TailwindCSS. It is intended to be used by a family business to manage its products, and sales. The information is stored in a PostgreSQL database and the application is hosted on Vercel."
-    },
-    "sh":{
-        "title": "SH",
-        "description": "It is a web system developed with Supabase and Next.js, it arises as a final project of the 'Computer Project Management' subject, it mainly has pharmacy control, appointments and medical consultations.."
-    },
-    "restaurant":{
-        "title": "Restaurant",
-        "description": "It is a website developed with Vite and Firebase, it is a project developed with a multidisciplinary team in which I am part of the development team."  
-    },  
     "pockettool": {
         "title": "PocketTool",
-        "description": "Mobile application for personal finance management, allowing users to track income, expenses, and savings goals."
-    },
-    "engquiz": {
-        "title": "EngQuiz",
-        "description": "Web and mobile application developed to track my English classes with quizzes on the topics I receive."
+        "description": "Personal finance mobile app published on Google Play. It lets users track income, expenses, budgets, savings, credits and payment methods, with local SQLite persistence and summaries and indicators calculated by category, payment method and period. Built with Expo, React Native and TypeScript, using AI-assisted workflows."
     },
     "conadem": {
         "title": "Conadem",
-        "description": "Participation in the development of the landing page and administrative platform for the National Council for Evaluation and Accreditation."
+        "description": "Frontend development of the landing page and administration panel of the National Council for Evaluation and Accreditation, built with Vue 3 and Tailwind CSS."
     },
     "innovatech": {
         "title": "Innovatech",
-        "description": "Participation in the development of the landing page for the government’s Innovation and Technology portal."
+        "description": "End-to-end build of the government's Innovation and Technology portal responsive landing page, optimized for performance and SEO with Vue 3 and Tailwind CSS."
     }
-
 }
