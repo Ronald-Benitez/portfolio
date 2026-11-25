@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { IconBrandGithub, IconBrandLinkedin, IconMailForward, IconMail } from "@tabler/icons-react"
+import { IconBrandGithub, IconBrandLinkedin, IconMailForward, IconMail, IconMapPin } from "@tabler/icons-react"
 
 import MailtToClipBoard from "./mail-to-clipboard"
 
@@ -9,13 +9,10 @@ const socialMedia = [
     { name: "email", href: "mailto:ronald362001@gmail.com", icon: <IconMailForward size={25} /> }
 ]
 
-function MainSection() {
-    const { t, i18n } = useTranslation()
+const CV_PATH = "/Ronald-Benitez-CV.pdf"
 
-    const handleDownloadCV = () => {
-        const lang = i18n.language === "es" ? "es" : "en"
-        window.open(`/Ronald-Benitez-cv-${lang}.pdf`, "_blank")
-    }
+function MainSection() {
+    const { t } = useTranslation()
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -27,6 +24,10 @@ function MainSection() {
             <h1 className="text-4xl text-center mt-4 p-2">
                 {t("main-section.title")} <span className="font-bold">{t("main-section.name")} {t("main-section.lastname")}</span>
             </h1>
+            <p className="flex items-center gap-1 text-gray-600 mt-2">
+                <IconMapPin size={18} />
+                {t("main-section.location")}
+            </p>
             <p className="text-center mt-4 max-w-prose p-2">
                 {t("main-section.description")}
             </p>
@@ -38,6 +39,7 @@ function MainSection() {
                             href={item.href}
                             className="hover:text-gray-600 p-2"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             {item.icon}
                         </a>
@@ -52,7 +54,9 @@ function MainSection() {
             <div className="flex justify-center mt-4">
                 <a
                     className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded text-sm cursor-pointer"
-                    onClick={handleDownloadCV}
+                    href={CV_PATH}
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     {t('main-section.button')}
                 </a>

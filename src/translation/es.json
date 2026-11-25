@@ -6,9 +6,10 @@
     "working": "¿Qué estoy haciendo?",
     "main-section": {
         "title": "Hola, soy",
-        "name": "Ronald",
-        "lastname": "Benítez",
-        "description": "Un entusiasta desarrollador web y móvil. Actualmente trabajo en la Secretaría de Innovación como desarrollador frontend, utilizando tecnologías como Vue 3, React y TailwindCSS. Además, sigo desarrollando PocketTool en mi tiempo libre.",
+        "name": "Ronald Brandon",
+        "lastname": "Benítez Cañas",
+        "location": "El Salvador",
+        "description": "Ingeniero en Sistemas Informáticos especializado en desarrollo web y móvil. Trabajo como desarrollador frontend en la Secretaría de Innovación, creando aplicaciones y sistemas administrativos con React, Vue 3, React Native y Tailwind CSS, e integrando flujos de desarrollo asistidos por IA. En mi tiempo libre mantengo PocketTool, mi app de finanzas personales publicada en Google Play.",
         "button": "Descargar CV"
     },
     "training-section": {
