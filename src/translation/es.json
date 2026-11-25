@@ -24,7 +24,7 @@
     },
     "working-section": {
         "title": "¿Qué estoy haciendo?",
-        "description": "Actualmente trabajo como desarrollador frontend en la Secretaría de Innovación, donde participo en el desarrollo de aplicaciones web con Vue 3, React y TailwindCSS. Además, en mi tiempo libre sigo mejorando PocketTool y EngQuiz, incorporando nuevas funcionalidades y optimizando su rendimiento.",
+        "description": "Trabajo como desarrollador frontend en la Secretaría de Innovación (2024 – Actualidad), donde diseño, construyo y mantengo aplicaciones web, sistemas administrativos e interfaces responsivas con Vue 2, Vue 3, React y Tailwind CSS. También integro flujos de desarrollo asistidos por IA para acelerar el prototipado y mantener altos estándares de calidad, y participo en la digitalización de plataformas internas y portales institucionales como Conadem e Innovatech.",
         "technologies": "Tecnologías utilizadas"
     },
     "toast":{

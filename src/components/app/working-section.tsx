@@ -11,13 +11,7 @@ function WorkingSection() {
             name: t("pockettool.title"),
             description: t("pockettool.description"),
             source: "https://github.com/Ronald-Benitez/PocketTool",
-            technologies: ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"] as IconsProps["icons"]
-        },
-        {
-            name: t("engquiz.title"),
-            description: t("engquiz.description"),
-            source: "https://github.com/Ronald-Benitez/EngQuiz",
-            technologies: ["React Native", "Expo", "TypeScript"] as IconsProps["icons"]
+            technologies: ["React Native", "Expo", "TypeScript", "SQLite"] as IconsProps["icons"]
         }
     ]), [t]);
 

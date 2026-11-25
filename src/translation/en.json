@@ -24,7 +24,7 @@
     },
     "working-section": {
         "title": "What I'm doing?",
-        "description": "I currently work as a frontend developer at the Secretariat of Innovation, where I participate in the development of web applications using Vue 3, React, and TailwindCSS. Additionally, in my free time, I continue improving PocketTool and EngQuiz, incorporating new features and optimizing its performance.",
+        "description": "I work as a frontend developer at the Secretariat of Innovation (2024 – Present), where I design, build and maintain web applications, administrative systems and responsive interfaces with Vue 2, Vue 3, React and Tailwind CSS. I also integrate AI-assisted development workflows to speed up prototyping and keep high quality standards, and I take part in the digitalization of internal platforms and institutional portals such as Conadem and Innovatech.",
         "technologies": "Technologies used"
     },
     "toast":{
